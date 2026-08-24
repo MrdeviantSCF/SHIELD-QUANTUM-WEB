@@ -1,8 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "standalone",
+  output: "export",
+  basePath: "/SHIELD-AI-WEB_CLONE",
+  trailingSlash: true,
+
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
