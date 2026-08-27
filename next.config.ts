@@ -1,8 +1,11 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/SHIELD-AI-WEB_CLONE",
+  basePath: isProd ? "/SHIELD-QUANTUM-WEB" : "",
+  assetPrefix: isProd ? "/SHIELD-QUANTUM-WEB/" : "",
   trailingSlash: true,
 
   images: {
