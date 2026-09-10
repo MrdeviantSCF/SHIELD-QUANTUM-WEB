@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Section, SectionHeader, GlassCard, Badge } from '@/components/ui';
+import { Section, GlassCard, Badge } from '@/components/ui';
 
 const fadeIn = { hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } };
 

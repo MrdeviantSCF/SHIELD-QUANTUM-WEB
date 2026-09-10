@@ -4,9 +4,9 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ChevronDown, Search, ArrowRight } from 'lucide-react';
+import { Menu, X, ChevronDown, Search } from 'lucide-react';
 import { navigationData } from '@/data/navigation';
-import { StatusBadge, Badge } from '@/components/ui';
+import { Badge } from '@/components/ui';
 import type { NavItem } from '@/types';
 
 /* ═══════════════════════════════════════════════════════

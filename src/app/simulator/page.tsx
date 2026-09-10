@@ -28,10 +28,9 @@ import {
   Maximize2,
   X,
   Search,
-  CheckCircle2,
   Eye,
 } from 'lucide-react';
-import { Section, SectionHeader, GlassCard, Badge, Button, StatusBadge } from '@/components/ui';
+import { Section, SectionHeader, GlassCard, Badge, Button } from '@/components/ui';
 import { SIMULATOR_VISUAL_ASSETS, SimulatorVisualAsset } from '@/data/simulatorVisualAssets';
 
 /* ═══════════════════════════════════════════════════════

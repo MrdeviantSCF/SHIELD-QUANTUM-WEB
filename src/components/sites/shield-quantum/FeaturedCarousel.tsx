@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, BookOpen, Layers } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 interface Slide {
   id: number;

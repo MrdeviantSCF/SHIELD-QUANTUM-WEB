@@ -8,22 +8,15 @@ import {
   Radio,
   Zap,
   Maximize2,
-  CheckCircle2,
   ArrowRight,
-  Layers,
   Activity,
   Info,
   X,
   Sparkles,
   Sliders,
-  Compass,
-  Cpu,
-  ShieldCheck,
-  Eye,
   Workflow,
-  Network,
 } from 'lucide-react';
-import { Section, SectionHeader, GlassCard, Badge, Button, StatusBadge } from '@/components/ui';
+import { Section, SectionHeader, GlassCard } from '@/components/ui';
 
 interface OpticalComponent {
   id: string;

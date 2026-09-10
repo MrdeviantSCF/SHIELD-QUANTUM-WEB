@@ -17,10 +17,27 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://shieldquantum.ai"),
-  title: "SHIELD QUANTUM MACHINE AND TECHNOLOGY | Advanced Quantum Systems",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://shieldquantum.ai"),
+  title: {
+    default: "SHIELD QUANTUM MACHINE AND TECHNOLOGY | Advanced Quantum Systems",
+    template: "%s | SHIELD QUANTUM",
+  },
   description:
     "SHIELD QUANTUM MACHINE AND TECHNOLOGY is advancing the state of the art in quantum computing and developing hardware and machine tools to operate beyond classical supercomputing capabilities.",
+  keywords: [
+    "Quantum Computing",
+    "Superconducting Qubits",
+    "Quantum Machine Technology",
+    "Quantum Simulator",
+    "Bloch Sphere",
+    "Cryogenic Systems",
+    "Post-Quantum Cryptography",
+    "Quantum AI",
+    "Dipak S. Dahifale",
+  ],
+  authors: [{ name: "Dipak S. Dahifale", url: "https://shieldquantum.ai" }],
+  creator: "Dipak S. Dahifale",
+  publisher: "SHIELD QUANTUM MACHINE AND TECHNOLOGY",
   icons: {
     icon: "/images/shield-quantum-ai-logo.jpg",
     shortcut: "/images/shield-quantum-ai-logo.jpg",
@@ -31,6 +48,7 @@ export const metadata: Metadata = {
     description:
       "Advancing scalable quantum processors, machine architectures, and software systems to operate beyond classical supercomputing capabilities.",
     siteName: "SHIELD QUANTUM MACHINE AND TECHNOLOGY",
+    url: "https://shieldquantum.ai",
     images: [
       {
         url: "/images/shield-quantum-ai-logo.jpg",
@@ -40,6 +58,13 @@ export const metadata: Metadata = {
       },
     ],
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SHIELD QUANTUM MACHINE AND TECHNOLOGY",
+    description:
+      "Advancing scalable quantum processors, machine architectures, and software systems to operate beyond classical supercomputing capabilities.",
+    images: ["/images/shield-quantum-ai-logo.jpg"],
   },
 };
 

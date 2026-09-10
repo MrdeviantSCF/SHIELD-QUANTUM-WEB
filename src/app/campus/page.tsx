@@ -2,9 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Section, SectionHeader, GlassCard, Badge } from '@/components/ui';
-
-const fadeIn = { hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } };
+import { Section, GlassCard, Badge } from '@/components/ui';
 
 const facilities = [
   { id: 'qrc', name: 'Quantum Research Center', purpose: 'Central facility for fundamental quantum computing research, algorithm development, and theoretical physics.', x: 35, y: 10, w: 30, h: 15, color: '#00d4ff' },

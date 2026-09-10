@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useRef, useMemo, useEffect, useState } from 'react';
+import React, { useRef, useMemo, useEffect } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import * as THREE from 'three';
 
@@ -18,9 +18,7 @@ import * as THREE from 'three';
    ——————————————————————————————————————————————————————— */
 function BlochSphereCore() {
   const groupRef = useRef<THREE.Group>(null);
-  const vectorRef = useRef<THREE.Line>(null);
   const tipRef = useRef<THREE.Mesh>(null);
-  const equatorRef = useRef<THREE.LineLoop>(null);
 
   // Create equator circle points
   const equatorPoints = useMemo(() => {

@@ -17,23 +17,15 @@ import {
   Microscope,
   BookOpen,
   FileText,
-  GraduationCap,
-  Sparkles,
   Search,
   CheckCircle2,
   X,
-  ExternalLink,
-  ChevronRight,
-  Flame,
   Zap,
 } from 'lucide-react';
-import { Section, SectionHeader, GlassCard, Badge, Button, StatusBadge } from '@/components/ui';
+import { Section, SectionHeader, GlassCard, StatusBadge } from '@/components/ui';
 import {
   RESEARCH_DOCUMENTS,
   ResearchDocument,
-  DocumentType,
-  ResearchDomain,
-  ContentStatus,
 } from '@/data/researchKnowledgeBase';
 
 const fadeIn = { hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.5 } } };
@@ -116,7 +108,6 @@ const researchDomains = [
 
 export default function ResearchPage() {
   const [selectedType, setSelectedType] = useState<string>('ALL');
-  const [selectedDomain, setSelectedDomain] = useState<string>('ALL');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [activeDoc, setActiveDoc] = useState<ResearchDocument | null>(null);
 
@@ -124,16 +115,15 @@ export default function ResearchPage() {
   const filteredDocs = useMemo(() => {
     return RESEARCH_DOCUMENTS.filter((doc) => {
       const matchType = selectedType === 'ALL' || doc.type === selectedType;
-      const matchDomain = selectedDomain === 'ALL' || doc.domain === selectedDomain;
       const matchSearch =
         searchQuery === '' ||
         doc.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
         doc.summary.toLowerCase().includes(searchQuery.toLowerCase()) ||
         doc.tags.some((t) => t.toLowerCase().includes(searchQuery.toLowerCase())) ||
         doc.author.toLowerCase().includes(searchQuery.toLowerCase());
-      return matchType && matchDomain && matchSearch;
+      return matchType && matchSearch;
     });
-  }, [selectedType, selectedDomain, searchQuery]);
+  }, [selectedType, searchQuery]);
 
   return (
     <>

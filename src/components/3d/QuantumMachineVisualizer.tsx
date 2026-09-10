@@ -3,7 +3,7 @@
 import React, { useRef, useMemo, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
-import { Thermometer, ShieldCheck, Cpu, Layers } from 'lucide-react';
+import { Thermometer } from 'lucide-react';
 
 /* ═══════════════════════════════════════════════════════
    HIGH-REALISM CRYOGENIC DILUTION REFRIGERATOR & QPU

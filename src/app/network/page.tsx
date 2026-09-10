@@ -1,12 +1,11 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import {
   Network,
   Share2,
   Radio,
-  Cpu,
   Layers,
   ShieldCheck,
   Zap,
@@ -14,13 +13,10 @@ import {
   ArrowRight,
   Activity,
   Server,
-  RefreshCw,
   CheckCircle2,
   AlertCircle,
   Clock,
   Sparkles,
-  Waves,
-  type LucideIcon,
 } from 'lucide-react';
 import { Section, SectionHeader, GlassCard, Badge, Button } from '@/components/ui';
 

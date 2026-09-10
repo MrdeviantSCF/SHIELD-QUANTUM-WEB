@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import {
   Cpu,
   Atom,
@@ -9,12 +8,8 @@ import {
   Share2,
   Network,
   Rocket,
-  ArrowRight,
-  CheckCircle2,
-  Sparkles,
-  Zap,
 } from 'lucide-react';
-import { GlassCard, Badge, Button } from '@/components/ui';
+import { GlassCard, Badge } from '@/components/ui';
 
 /* ═══════════════════════════════════════════════════════
    QUANTUM PROGRESSION STACK (Hardware to Applications)

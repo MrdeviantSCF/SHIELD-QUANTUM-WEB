@@ -7,19 +7,15 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   Cpu,
   Atom,
-  Thermometer,
   Activity,
-  Layers,
-  Sparkles,
   Maximize2,
   X,
   Radio,
   ShieldCheck,
-  Zap,
   ArrowRight,
   FlaskConical,
 } from 'lucide-react';
-import { Button, Badge, GlassCard } from '@/components/ui';
+import { Button, Badge } from '@/components/ui';
 
 // Lazy-load the heavy 3D WebGL Bloch Sphere Visualizer
 const InteractiveBlochSphere3D = dynamic(

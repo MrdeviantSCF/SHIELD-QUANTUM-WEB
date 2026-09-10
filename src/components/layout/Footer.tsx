@@ -3,8 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Shield, Sparkles } from 'lucide-react';
-import { Badge } from '@/components/ui';
+import { Sparkles } from 'lucide-react';
 
 export function Footer() {
   return (

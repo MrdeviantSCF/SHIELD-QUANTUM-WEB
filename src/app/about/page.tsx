@@ -6,7 +6,6 @@ import {
   Target,
   Eye,
   Compass,
-  BookOpen,
   ArrowRight,
   Cpu,
   Zap,
@@ -206,7 +205,7 @@ export default function AboutPage() {
             {/* Timeline line */}
             <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-white/10 via-photon-cyan/30 to-quantum-violet/30" />
 
-            {timeline.map((item, index) => {
+            {timeline.map((item) => {
               const IconComponent = item.icon;
               return (
                 <motion.div

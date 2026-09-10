@@ -1,22 +1,13 @@
 'use client';
 
-import React, { useState, useMemo, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useState, useMemo } from 'react';
 import {
   Atom,
   Cpu,
   Share2,
   Waves,
-  Play,
-  RotateCcw,
   Sparkles,
-  Zap,
-  Sliders,
-  CheckCircle,
-  HelpCircle,
-  BarChart2,
   Compass,
-  ArrowRight,
 } from 'lucide-react';
 import { GlassCard, Badge, Button } from '@/components/ui';
 

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Shield, Lock, Key, AlertTriangle, ArrowRight, CheckCircle } from 'lucide-react';
+import { Shield, Lock, Key, AlertTriangle, ArrowRight } from 'lucide-react';
 import { Section, SectionHeader, GlassCard, Badge, Button } from '@/components/ui';
 
 const fadeIn = { hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } };

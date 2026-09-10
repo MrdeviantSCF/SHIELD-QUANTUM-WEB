@@ -7,31 +7,20 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   BookOpen,
   GraduationCap,
-  Atom,
   ArrowRight,
   Search,
   Layers,
   FileText,
-  Sliders,
   CheckCircle2,
   X,
-  ExternalLink,
-  ChevronRight,
-  Zap,
-  Info,
   Maximize2,
-  Cpu,
-  Radio,
-  FlaskConical,
 } from 'lucide-react';
-import { Section, SectionHeader, GlassCard, Badge, Button, StatusBadge } from '@/components/ui';
+import { Section, GlassCard } from '@/components/ui';
 import {
   RESEARCH_DOCUMENTS,
   SCIENTIFIC_DIAGRAMS,
   ResearchDocument,
   ScientificDiagram,
-  ResearchDomain,
-  DocumentType,
 } from '@/data/researchKnowledgeBase';
 
 const fadeIn = { hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.5 } } };

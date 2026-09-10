@@ -12,7 +12,6 @@ import { Section, GlassCard, Badge } from '@/components/ui';
 type Channel = 'idle' | 'sending' | 'intercepted' | 'received';
 
 export default function CryptographyPage() {
-  const [channelState, setChannelState] = useState<Channel>('idle');
   const [evePresent, setEvePresent] = useState(false);
   const [step, setStep] = useState(0);
 

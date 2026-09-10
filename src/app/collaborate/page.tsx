@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Send, CheckCircle } from 'lucide-react';
-import { Section, SectionHeader, GlassCard, Badge, Button } from '@/components/ui';
+import { Section, GlassCard, Badge, Button } from '@/components/ui';
 
 const collaborationTypes = [
   { value: 'research', label: 'Research Collaboration' },

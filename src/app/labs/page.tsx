@@ -3,8 +3,8 @@
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { FlaskConical, Radio, Cpu, Building2, ArrowRight, ShieldCheck, Sparkles, Layers, Activity } from 'lucide-react';
-import { Section, SectionHeader, GlassCard, Badge, Button } from '@/components/ui';
+import { FlaskConical, Radio, Cpu, Building2, ArrowRight, Activity } from 'lucide-react';
+import { Section, SectionHeader, GlassCard, Badge } from '@/components/ui';
 
 const primaryLabs = [
   {

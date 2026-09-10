@@ -1,23 +1,8 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
-import {
-  Cpu,
-  Layers,
-  Thermometer,
-  Zap,
-  Activity,
-  ShieldCheck,
-  Radio,
-  Sparkles,
-  ArrowRight,
-  FlaskConical,
-  Gauge,
-  CheckCircle2,
-} from 'lucide-react';
+import { FlaskConical, Radio } from 'lucide-react';
 import { Section, SectionHeader, GlassCard, Badge, Button, StatusBadge } from '@/components/ui';
 
 const fadeIn = { hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.5 } } };

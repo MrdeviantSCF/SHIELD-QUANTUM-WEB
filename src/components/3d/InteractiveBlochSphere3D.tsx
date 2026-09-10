@@ -4,17 +4,8 @@ import React, { useRef, useMemo, useState, useEffect } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Html } from '@react-three/drei';
 import * as THREE from 'three';
-import { motion, AnimatePresence } from 'framer-motion';
-import {
-  Activity,
-  Zap,
-  RotateCw,
-  Sparkles,
-  Gauge,
-  CheckCircle2,
-  Atom,
-  Layers,
-} from 'lucide-react';
+import { Activity, RotateCw, Zap } from 'lucide-react';
+
 
 /* ═══════════════════════════════════════════════════════
    WORLD-CLASS 3D BLOCH SPHERE & QUANTUM STATE VISUALIZER
@@ -32,7 +23,7 @@ interface BlochVisualizerProps {
   theta: number;
   phi: number;
   isCollapsing: boolean;
-  activeGate: string;
+  activeGate?: string;
   autoPrecess: boolean;
 }
 
@@ -40,7 +31,6 @@ function VolumetricBlochSphere({
   theta,
   phi,
   isCollapsing,
-  activeGate,
   autoPrecess,
 }: BlochVisualizerProps) {
   const masterGroupRef = useRef<THREE.Group>(null);
@@ -75,7 +65,7 @@ function seededRandom(seed: number): number {
 }
 
   // 2,000 Layered Wavefunction Probability Cloud Particles
-  const { particlePositions, particlePhases, particleBaseRadii, particleDensities } = useMemo(() => {
+  const { particlePositions, particlePhases, particleBaseRadii } = useMemo(() => {
     const count = 2000;
     const positions = new Float32Array(count * 3);
     const phases = new Float32Array(count);
@@ -556,6 +546,13 @@ export default function InteractiveBlochSphere3D() {
               {alphaVal}|0⟩ + {betaVal}e<sup>i{(phi / Math.PI).toFixed(2)}π</sup>|1⟩
             </span>
           </div>
+
+          {lastMeasurement && (
+            <div className="bg-photon-cyan/10 p-1.5 rounded border border-photon-cyan/30 text-[9px] flex justify-between items-center">
+              <span className="text-text-muted uppercase">Last Born Collapse:</span>
+              <span className="font-bold text-photon-cyan">{lastMeasurement}</span>
+            </div>
+          )}
 
           {/* Continuous Probabilities */}
           <div className="space-y-2">
